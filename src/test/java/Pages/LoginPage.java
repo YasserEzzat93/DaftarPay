@@ -64,7 +64,10 @@ public class LoginPage extends PageBase{
     public LoginPage(WebDriver driver) {
 		super(driver);
 	}
-
+    
+    
+	@FindBy(xpath = "//*[@id=\"navbarSupportedContent\"]/ul[2]/li[2]/a")
+	private WebElement LoginBtnInHomePage;
 
 
 
@@ -91,7 +94,10 @@ public class LoginPage extends PageBase{
     @FindBy(xpath = "//*[@id=\"business\"]/auth-business-login/form/div[4]/button")
     private WebElement LoginAsMerchant;
     
-    
+	public void ClickOnLoginBtn() {
+		LoginBtnInHomePage.click();
+
+	}
     
     
     
@@ -113,6 +119,7 @@ public class LoginPage extends PageBase{
     
     public void MakeLogin(String ID , String password) 
     {
+    	ClickOnLoginBtn();
     	NationalId.sendKeys(ID);
     	passwordInput.sendKeys(password);
     	loginButton.click();
@@ -122,6 +129,7 @@ public class LoginPage extends PageBase{
     
     public void MakeLoginAsMerchant(String Crn , String password) 
     {
+    	ClickOnLoginBtn();
     	LoginBtnAsMerchant.click();
     	CrnTxt.sendKeys(Crn);
     	CrnPassword.sendKeys(password);

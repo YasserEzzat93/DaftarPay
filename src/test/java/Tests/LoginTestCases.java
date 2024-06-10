@@ -20,13 +20,10 @@ public class LoginTestCases extends TestBase{
 
     @BeforeMethod
     public void setUp() throws InterruptedException {
-
-         
-        
+     
          
     	LoginPageObject = new LoginPage(driver);
-      
-      
+   
     }
 
     @Test

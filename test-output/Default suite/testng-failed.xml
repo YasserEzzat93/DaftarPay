@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.LoginTestCases">
+      <class name="Tests.RegisterTc">
         <methods>
-          <include name="LoginWithEmptyData"/>
-          <include name="LoginWithValidData"/>
-          <include name="LoginWithEmptyPassword"/>
-          <include name="LoginWithEmptyNID"/>
-          <include name="LoginWithinValidData"/>
           <include name="setUp"/>
+          <include name="StartDriver"/>
+          <include name="CheckValidationOnNID"/>
         </methods>
-      </class> <!-- Tests.LoginTestCases -->
+      </class> <!-- Tests.RegisterTc -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -13,24 +13,28 @@ public class ForgetPasswordTc extends TestBase{
 
 	public LoginPage LoginPageObject;
 	public ForgetPasswordPage ForgetPasswordPageObject;
-	
-	
-	
 
-    @BeforeMethod
-    public void setUp() throws InterruptedException {
-                 
-    	LoginPageObject = new LoginPage(driver);
-    	ForgetPasswordPageObject = new ForgetPasswordPage(driver);
-    	ForgetPasswordPageObject = new ForgetPasswordPage(driver);
-      
-    }
-    
-    @Test
-    public void clickOnForgetPasswordLbl() throws InterruptedException {
-    	Thread.sleep(5000);    	
-    	ForgetPasswordPageObject.ClickOnForgetPasswordLbl();
-       
-      }
+
+
+
+	@BeforeMethod
+	public void setUp() throws InterruptedException {
+
+		LoginPageObject = new LoginPage(driver);
+		ForgetPasswordPageObject = new ForgetPasswordPage(driver);
+
+
+	}
+	public void OpenLoginPage() 
+	{
+		ForgetPasswordPageObject.ClickOnLoginBtn();
+	}
+	@Test
+	public void clickOnForgetPasswordLbl() throws InterruptedException {
+		OpenLoginPage();
+		Thread.sleep(5000);    	
+		ForgetPasswordPageObject.ClickOnForgetPasswordLbl();
+
+	}
 
 }

@@ -20,7 +20,7 @@ public class TestBase {
 		driver = new ChromeDriver();      
 		driver.manage().window().maximize(); 
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);   
-		driver.get("https://test.daftarpay.co/IMOREGATEWAY/IMORECORE/portal/org/client/landing#/index/Login");
+		driver.get("https://test.daftarpay.co/IMOREGATEWAY/IMORECORE/portal/org/daftarMain/landing#/index/LandingPage");
 		
 	}
 	
