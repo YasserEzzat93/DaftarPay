@@ -19,7 +19,7 @@ public class TestBase {
 				System.getProperty("user.dir")+"\\Drivers\\chromedriver.exe");    	
 		driver = new ChromeDriver();      
 		driver.manage().window().maximize(); 
-		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);   
 		driver.get("https://test.daftarpay.co/IMOREGATEWAY/IMORECORE/portal/org/client/landing#/index/Login");
 		
 	}
