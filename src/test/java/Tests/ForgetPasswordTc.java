@@ -22,6 +22,7 @@ public class ForgetPasswordTc extends TestBase{
                  
     	LoginPageObject = new LoginPage(driver);
     	ForgetPasswordPageObject = new ForgetPasswordPage(driver);
+    	ForgetPasswordPageObject = new ForgetPasswordPage(driver);
       
     }
     
