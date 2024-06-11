@@ -94,6 +94,25 @@ public class RegisterPage extends PageBase{
 		CreateAccountBtn.click();
 	}
 
+	
+	public void CreateClientWithCompleteInfo(String NID,String Phone, String OTP,String Pin) throws InterruptedException {
+		NIDInRegisterTxt.sendKeys(NID);
+		PhoneInRegisterTxt.sendKeys(Phone);
+		//Thread.sleep(1000);
+		FirstNextBtnOnClientRegister.click();	
+		//Thread.sleep(1000);
+		OTPLbl.sendKeys(OTP);
+		//Thread.sleep(1000);
+		ClickOnVerifyOtp();
+		//Thread.sleep(1000);
+		ClickOnVerifyNafath();
+		//Thread.sleep(1000);
+		CreatePinCode.sendKeys(Pin);
+		ConfirmTerms.click();
+		ConfirmCheckFromSimah.click();
+		//Thread.sleep(1000);
+		CreateAccountBtn.click();
+	}
 
 
 
@@ -142,9 +161,6 @@ public class RegisterPage extends PageBase{
 
 
 
-
-
-
 	public void openClientRegister() 
 	{
 		clickLogin();
@@ -152,12 +168,44 @@ public class RegisterPage extends PageBase{
 	}
 
 
-	public void openMerchantRegister() 
+	public void openMerchantRegister() throws InterruptedException 
 	{
 		clickLogin();
 		clickRegisterBtnInLoginPage();
+		Thread.sleep(3000);
 		clickMerchantRegisterBtnInregisterPage();
 
 	}
+	@FindBy(id = "crn")
+	private WebElement CRNTxt;
+	
+	@FindBy(id = "b_phone_number")
+	private WebElement MobileTxt;
+	
+	@FindBy(xpath = "//*[@id=\"cdk-step-content-1-0\"]/form/div[3]/button")
+	private WebElement FirstNextBtnOnMerchantRegister;
+	
+	public void FirstStepinMerchantRegister(String CRN , String Phone){
+
+		CRNTxt.sendKeys(CRN);
+		MobileTxt.sendKeys(Phone);
+		FirstNextBtnOnMerchantRegister.click();
+	}
+	
+	@FindBy(xpath = "//*[@id=\"cdk-step-content-1-1\"]/div/form/div[1]/div/div[2]/code-input/span[1]/input")
+	private WebElement OTPCrnLbl;
+	
+	@FindBy(xpath = "//*[@id=\"cdk-step-content-1-1\"]/div/form/div[3]/button")
+	private WebElement VerifyOtpCRNBtn;
+	
+
+	public void EnterCrnOtp(String OTP) throws InterruptedException {
+		OTPCrnLbl.sendKeys(OTP);
+		Thread.sleep(2000);
+		VerifyOtpCRNBtn.click();
+	}
+
+
+
 
 }

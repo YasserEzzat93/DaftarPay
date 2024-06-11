@@ -5,8 +5,8 @@
     <classes>
       <class name="Tests.RegisterTc">
         <methods>
+          <include name="CreateClientAccountWithValidData"/>
           <include name="setUp"/>
-          <include name="VerifyNafath2323"/>
           <include name="StartDriver"/>
         </methods>
       </class> <!-- Tests.RegisterTc -->

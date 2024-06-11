@@ -45,7 +45,7 @@ public class RegisterTc extends TestBase {
 	}
 
 	@Test
-	public void EnterOTP () throws InterruptedException {
+	public void EnterClientOTP () throws InterruptedException {
 		RegisterPageObject.openClientRegister();
 		//driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);  
 		Thread.sleep(1500);
@@ -59,7 +59,7 @@ public class RegisterTc extends TestBase {
 	@Test
 	public void VerifyNafath () throws InterruptedException {
 
-		EnterOTP();
+		EnterClientOTP();
 		RegisterPageObject.ClickOnVerifyNafath();
 	}
 
@@ -68,6 +68,16 @@ public class RegisterTc extends TestBase {
 		VerifyNafath();
 		RegisterPageObject.EnterPinCode("123456");
 	}
+	
+	
+	@Test
+	public void CreateClientAccountWithValidData() throws InterruptedException 
+	
+	{
+		RegisterPageObject.openClientRegister();
+		//Thread.sleep(1500);
+		RegisterPageObject.CreateClientWithCompleteInfo("1069975948", "524878787", "123654", "123456");
+	}
 
 
 
@@ -120,9 +130,16 @@ public class RegisterTc extends TestBase {
 
 
 	@Test
-	public void OpenMerchantReigsterPage() 
+	public void OpenMerchantReigsterPage() throws InterruptedException 
 	{
 		RegisterPageObject.openMerchantRegister();
 	}
+
+	@Test
+	public void EnterCrnOTP() throws InterruptedException {
+		OpenMerchantReigsterPage();
+		RegisterPageObject.EnterCrnOtp("123456");	
+	}
+
 
 }
