@@ -6,8 +6,8 @@
       <class name="Tests.RegisterTc">
         <methods>
           <include name="setUp"/>
+          <include name="VerifyNafath2323"/>
           <include name="StartDriver"/>
-          <include name="CheckValidationOnNID"/>
         </methods>
       </class> <!-- Tests.RegisterTc -->
     </classes>

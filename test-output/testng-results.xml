@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-10T14:47:40 AST" name="Default suite" finished-at="2024-06-10T14:47:49 AST" duration-ms="8862">
+  <suite started-at="2024-06-11T11:02:29 AST" name="Default suite" finished-at="2024-06-11T11:02:39 AST" duration-ms="9686">
     <groups>
     </groups>
-    <test started-at="2024-06-10T14:47:40 AST" name="Default test" finished-at="2024-06-10T14:47:49 AST" duration-ms="8862">
+    <test started-at="2024-06-11T11:02:29 AST" name="Default test" finished-at="2024-06-11T11:02:39 AST" duration-ms="9686">
       <class name="Tests.RegisterTc">
-        <test-method is-config="true" signature="StartDriver()[pri:0, instance:Tests.RegisterTc@7e7be63f]" started-at="2024-06-10T14:47:34 AST" name="StartDriver" finished-at="2024-06-10T14:47:40 AST" duration-ms="5963" status="PASS">
+        <test-method is-config="true" signature="StartDriver()[pri:0, instance:Tests.RegisterTc@614ca7df]" started-at="2024-06-11T11:02:24 AST" name="StartDriver" finished-at="2024-06-11T11:02:29 AST" duration-ms="4967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartDriver -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.RegisterTc@7e7be63f]" started-at="2024-06-10T14:47:40 AST" name="setUp" finished-at="2024-06-10T14:47:40 AST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.RegisterTc@614ca7df]" started-at="2024-06-11T11:02:29 AST" name="setUp" finished-at="2024-06-11T11:02:29 AST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="CheckValidationOnNID()[pri:0, instance:Tests.RegisterTc@7e7be63f]" started-at="2024-06-10T14:47:40 AST" name="CheckValidationOnNID" finished-at="2024-06-10T14:47:49 AST" duration-ms="8856" status="PASS">
+        <test-method signature="VerifyNafath2323()[pri:0, instance:Tests.RegisterTc@614ca7df]" started-at="2024-06-11T11:02:29 AST" name="VerifyNafath2323" finished-at="2024-06-11T11:02:39 AST" duration-ms="9664" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckValidationOnNID -->
+        </test-method> <!-- VerifyNafath2323 -->
       </class> <!-- Tests.RegisterTc -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
