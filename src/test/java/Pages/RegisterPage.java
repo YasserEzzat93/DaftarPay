@@ -154,7 +154,7 @@ public class RegisterPage extends PageBase{
 	private WebElement openregisterMerchant;
 
 	public void clickMerchantRegisterBtnInregisterPage() {
-		openregisterMerchant.click();
+		clickButton(openregisterMerchant);
 	}
 
 

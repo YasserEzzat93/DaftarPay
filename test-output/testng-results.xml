@@ -2,59 +2,38 @@
 <testng-results ignored="7" total="8" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-11T17:21:14 AST" name="Default suite" finished-at="2024-06-11T17:21:52 AST" duration-ms="37604">
+  <suite started-at="2024-06-12T16:00:52 AST" name="Default suite" finished-at="2024-06-12T16:01:00 AST" duration-ms="7824">
     <groups>
     </groups>
-    <test started-at="2024-06-11T17:21:14 AST" name="Default test" finished-at="2024-06-11T17:21:52 AST" duration-ms="37604">
+    <test started-at="2024-06-12T16:00:52 AST" name="Default test" finished-at="2024-06-12T16:01:00 AST" duration-ms="7824">
       <class name="Tests.RegisterTc">
-        <test-method is-config="true" signature="StartDriver()[pri:0, instance:Tests.RegisterTc@618425b5]" started-at="2024-06-11T17:21:08 AST" name="StartDriver" finished-at="2024-06-11T17:21:14 AST" duration-ms="6165" status="PASS">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:Tests.RegisterTc@2c35e847]" started-at="2024-06-12T16:00:47 AST" name="startDriver" finished-at="2024-06-12T16:00:52 AST" duration-ms="5010" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- StartDriver -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.RegisterTc@618425b5]" started-at="2024-06-11T17:21:14 AST" name="setUp" finished-at="2024-06-11T17:21:14 AST" duration-ms="8" status="PASS">
+        </test-method> <!-- startDriver -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.RegisterTc@2c35e847]" started-at="2024-06-12T16:00:52 AST" name="setUp" finished-at="2024-06-12T16:00:52 AST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="CreateClientAccountWithValidData()[pri:0, instance:Tests.RegisterTc@618425b5]" started-at="2024-06-11T17:21:14 AST" name="CreateClientAccountWithValidData" finished-at="2024-06-11T17:21:52 AST" duration-ms="37583" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method signature="OpenMerchantReigsterPage()[pri:0, instance:Tests.RegisterTc@2c35e847]" started-at="2024-06-12T16:00:52 AST" name="OpenMerchantReigsterPage" finished-at="2024-06-12T16:01:00 AST" duration-ms="7619" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=125.0.6422.142)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NV17DNE', ip: '10.20.20.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e4bfb3834589c2abeca728dd96322a0e]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=125.0.6422.142)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NV17DNE', ip: '10.20.20.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.142, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e4bfb3834589c2abeca728dd96322a0e
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
-at Pages.RegisterPage.CreateClientWithCompleteInfo(RegisterPage.java:104)
-at Tests.RegisterTc.CreateClientAccountWithValidData(RegisterTc.java:79)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at Tests.RegisterTc.OpenMerchantReigsterPage(RegisterTc.java:139)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -85,10 +64,21 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreateClientAccountWithValidData -->
+        </test-method> <!-- OpenMerchantReigsterPage -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Tests.RegisterTc@2c35e847]" started-at="2024-06-12T16:01:00 AST" name="screenshotOnFailure" finished-at="2024-06-12T16:01:00 AST" duration-ms="182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=OpenMerchantReigsterPage status=FAILURE method=RegisterTc.OpenMerchantReigsterPage()[pri:0, instance:Tests.RegisterTc@2c35e847] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
       </class> <!-- Tests.RegisterTc -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

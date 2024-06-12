@@ -95,16 +95,14 @@ public class LoginPage extends PageBase{
     private WebElement LoginAsMerchant;
     
 	public void ClickOnLoginBtn() {
-		LoginBtnInHomePage.click();
-
+		clickButton(LoginBtnInHomePage);
 	}
     
     
     
 
     public void enterNID(String ID) {
-        NationalId.sendKeys(ID);
-        
+        NationalId.sendKeys(ID);      
     }
 
     public void enterPassword(String password) {
@@ -112,7 +110,7 @@ public class LoginPage extends PageBase{
     }
 
     public void clickLogin() {
-        loginButton.click();
+        clickButton(loginButton);
     }
     
     
@@ -122,7 +120,7 @@ public class LoginPage extends PageBase{
     	ClickOnLoginBtn();
     	NationalId.sendKeys(ID);
     	passwordInput.sendKeys(password);
-    	loginButton.click();
+    	 clickButton(loginButton);
     	
     }
     
@@ -130,10 +128,10 @@ public class LoginPage extends PageBase{
     public void MakeLoginAsMerchant(String Crn , String password) 
     {
     	ClickOnLoginBtn();
-    	LoginBtnAsMerchant.click();
+    	clickButton(LoginBtnAsMerchant);
     	CrnTxt.sendKeys(Crn);
     	CrnPassword.sendKeys(password);
-    	LoginAsMerchant.click();
+    	 clickButton(LoginAsMerchant);
     	
     }
     

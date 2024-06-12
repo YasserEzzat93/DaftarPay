@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression Suite]">
+  <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="Regression Test(failed)">
+    <classes>
+      <class name="Tests.LoginTestCases">
+        <methods>
+          <include name="LoginWithCorrectCrnandCorrectPassword"/>
+          <include name="LoginWithEmptyData"/>
+          <include name="startDriver"/>
+          <include name="LoginWithValidData"/>
+          <include name="LoginWithEmptyPassword"/>
+          <include name="LoginWithEmptyNID"/>
+          <include name="LoginWithinValidData"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.LoginTestCases -->
+      <class name="Tests.ForgetPasswordTc">
+        <methods>
+          <include name="setUp"/>
+          <include name="clickOnForgetPasswordLbl"/>
+          <include name="startDriver"/>
+        </methods>
+      </class> <!-- Tests.ForgetPasswordTc -->
+      <class name="Tests.RegisterTc">
+        <methods>
+          <include name="CreateClientAccountWithValidData"/>
+          <include name="EnterClientOTP"/>
+          <include name="startDriver"/>
+          <include name="setUp"/>
+          <include name="VerifyNafath2323"/>
+          <include name="EnterCrnOTP"/>
+          <include name="OpenClientReigsterPage"/>
+          <include name="VerifyNafath"/>
+          <include name="OpenMerchantReigsterPage"/>
+          <include name="CheckValidationOnNID"/>
+        </methods>
+      </class> <!-- Tests.RegisterTc -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->

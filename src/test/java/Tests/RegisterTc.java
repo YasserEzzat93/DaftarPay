@@ -1,5 +1,8 @@
 package Tests;
 
+import org.openqa.selenium.By;
+import org.testng.Assert;
+
 //import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.BeforeMethod;
@@ -133,6 +136,7 @@ public class RegisterTc extends TestBase {
 	public void OpenMerchantReigsterPage() throws InterruptedException 
 	{
 		RegisterPageObject.openMerchantRegister();
+		Assert.assertTrue(driver.getCurrentUrl().contains("notebooqewewks"));
 	}
 
 	@Test
@@ -143,3 +147,45 @@ public class RegisterTc extends TestBase {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Example 1: Assert page title
+//assert driver.getTitle().equals("Expected Title");
+//
+// Example 2: Assert URL
+//assert driver.getCurrentUrl().equals("Expected URL");
+//
+// Example 3: Assert element presence
+//assert driver.findElement(By.id("elementId")).isDisplayed();
+//
+// Example 4: Assert element text
+//assert driver.findElement(By.xpath("//div")).getText().equals("Expected Text");
+//
+// Example 5: Assert element attribute value
+//assert driver.findElement(By.name("elementName")).getAttribute("attributeName").equals("Expected Value");

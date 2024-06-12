@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Regression Suite">
+	<parameter name="browser" value="firefox" />
+	<test name="Regression Test" preserve-order="false">
+		<classes>
+			<class name="Tests.RegisterTc" />
+			<class name="Tests.ContactUsTc" />
+			<class name="Tests.FAQSTc" />
+			<class name="Tests.ForgetPasswordTc" />
+			<class name="Tests.LoginTestCases" />
+			<class name="Tests.TermsAndConditionsTc" />
+		</classes>
+	</test>
+</suite> 

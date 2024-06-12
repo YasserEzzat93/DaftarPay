@@ -5,9 +5,10 @@
     <classes>
       <class name="Tests.RegisterTc">
         <methods>
-          <include name="CreateClientAccountWithValidData"/>
+          <include name="startDriver"/>
           <include name="setUp"/>
-          <include name="StartDriver"/>
+          <include name="OpenMerchantReigsterPage"/>
+          <include name="screenshotOnFailure"/>
         </methods>
       </class> <!-- Tests.RegisterTc -->
     </classes>
